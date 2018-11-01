@@ -1,10 +1,29 @@
 package jsp_python_conn;
 
+import java.util.ArrayList;
+
 public class prac01 {
 	
 	public static void main(String[] args) {
-		System.out.println("test");
 		
+		//¤Óist 
+		ArrayList pitches = new ArrayList();
+		pitches.add("138");
+		pitches.add("129");
+		pitches.add("142");
+		
+		System.out.println(pitches);
+		
+		pitches.add(0,"149");
+		System.out.println(pitches);
+		System.out.println(pitches.get(1));
+		System.out.println(pitches.size());
+		System.out.println(pitches.contains("138"));
+		System.out.println(pitches.remove("149"));
+		System.out.println(pitches);
+		
+		/*
+		// ¹è¿­
 		int[] odds = {1,3,5,7,9};
 		
  
@@ -30,6 +49,8 @@ public class prac01 {
 			}
 		}
 		System.out.println(j);
+		*/
+		
 	}
 
 }
