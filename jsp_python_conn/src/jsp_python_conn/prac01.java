@@ -1,11 +1,24 @@
 package jsp_python_conn;
 
+import java.util.*;
 import java.util.ArrayList;
 
 public class prac01 {
 	
 	public static void main(String[] args) {
 		
+		Calendar cal = new GregorianCalendar();
+		cal.add(Calendar.DATE,0);
+		
+		System.out.println(cal.get(Calendar.YEAR));
+		System.out.println(cal.get(Calendar.MONTH)+1);
+		System.out.println(cal.get(Calendar.DAY_OF_MONTH));
+		
+		Date date = cal.getTime();
+		System.out.println(date.toString());
+		
+		
+		/*
 		//¤Óist 
 		ArrayList pitches = new ArrayList();
 		pitches.add("138");
@@ -21,6 +34,9 @@ public class prac01 {
 		System.out.println(pitches.contains("138"));
 		System.out.println(pitches.remove("149"));
 		System.out.println(pitches);
+		*/
+		
+		
 		
 		/*
 		// ¹è¿­
